@@ -52,7 +52,6 @@ function SearchTools( { options, search } ) {
                 items={ suggestions } 
                 search={ handleChildSearch }
             />
-
         </>
     )
 }

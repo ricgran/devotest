@@ -2,7 +2,6 @@ import { PropTypes } from "prop-types";
 import "../styles/style.css";
 
 function SuggestionsMenu({ items, search }){
-
     const style= {
         display: items.length === 0 
         ? "none" 
@@ -13,7 +12,12 @@ function SuggestionsMenu({ items, search }){
         <div className="suggestionsMenu" style={ style }>
             {items.map((title) => {
                 return (
-                    <div className="suggestionsMenu-item" key={ title } onClick={ () => search(title) }>{title}</div>
+                    <div className="suggestionsMenu-item" 
+                        key={ title } 
+                        onClick={ () => search(title) }
+                    >
+                        {title}
+                    </div>
                 );
             })}
         </div>
