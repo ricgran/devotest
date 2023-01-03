@@ -2,7 +2,7 @@
     --main-bg-color: #b2b7c3;
     --main-color: #282c34;
     --border-radius-small: .25rem;
-  }
+}
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -21,20 +21,30 @@ body {
     position: relative;
 }
 
-.partition{
+.partition {
     padding: 1.5rem 0;
     position: relative;
 }
 
-.searchTools-input{
-   width: 18rem;
-   height: 2rem;
-   background-color: var(--main-color);
-   color: var(--main-bg-color);
-   border-radius: var(--border-radius-small);
+.searchTools {
+    display: inline-grid;
+    grid-template-columns: 1fr 6rem;
+    max-width: 30rem;
+}
+
+.searchTools-input {
+    text-indent: 1rem;
+    width: 22rem;
+    padding: 0;
+    border-width: 0;
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+    border-radius: var(--border-radius-small);
+    box-shadow: 0 .5rem 1rem rgb(0 0 0 / 0.2);
 }
 
 .searchTools-btn {
+    border-width: 0;
     width: 5rem;
     height: 2rem;
     border-radius: var(--border-radius-small);
@@ -43,19 +53,16 @@ body {
     color: var(--main-bg-color);
 }
 
-.suggestionsMenu{
-    position:absolute;
-    left: -6rem;
-    right: 0;
-    margin: .5rem auto;
+.suggestionsMenu {
+    position: absolute;
+    margin: 3rem auto;
     z-index: 100;
     background-color: white;
-    width: 18rem;
+    width: 22rem;
     padding: .5rem 0;
     border-radius: var(--border-radius-small);
     color: var(--main-bg-color);
     background-color: var(--main-color);
-    box-shadow: 0 .5rem 1rem rgb(0 0 0 / 0.2);
 }
 
 .suggestionsMenu-item {
@@ -67,13 +74,13 @@ table {
     border-collapse: collapse;
     border-radius: .5rem;
     overflow: hidden;
-  }
-  
-  th, td {
+}
+
+th, td {
     padding: 1em;
     background: var(--main-color);
     color: var(--main-bg-color);
     border-bottom: .2rem solid var(--main-bg-color); 
-  }
+}
 
  

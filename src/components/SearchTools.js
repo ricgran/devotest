@@ -30,7 +30,7 @@ function SearchTools( { options, search } ) {
     }
 
     return (
-        <>
+        <div className="searchTools">
             <input 
                 className="searchTools-input"
                 type="text"
@@ -52,7 +52,7 @@ function SearchTools( { options, search } ) {
                 items={ suggestions } 
                 search={ handleChildSearch }
             />
-        </>
+        </div>
     )
 }
 
