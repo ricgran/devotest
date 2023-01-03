@@ -1,0 +1,79 @@
+:root {
+    --main-bg-color: #b2b7c3;
+    --main-color: #282c34;
+    --border-radius-small: .25rem;
+  }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+}  
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.partition{
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.searchTools-input{
+   width: 18rem;
+   height: 2rem;
+   background-color: var(--main-color);
+   color: var(--main-bg-color);
+   border-radius: var(--border-radius-small);
+}
+
+.searchTools-btn {
+    width: 5rem;
+    height: 2rem;
+    border-radius: var(--border-radius-small);
+    margin-left: 1rem;
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
+}
+
+.suggestionsMenu{
+    position:absolute;
+    left: -6rem;
+    right: 0;
+    margin: .5rem auto;
+    z-index: 100;
+    background-color: white;
+    width: 18rem;
+    padding: .5rem 0;
+    border-radius: var(--border-radius-small);
+    color: var(--main-bg-color);
+    background-color: var(--main-color);
+    box-shadow: 0 .5rem 1rem rgb(0 0 0 / 0.2);
+}
+
+.suggestionsMenu-item {
+    margin: .25rem 0;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: .5rem;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 1em;
+    background: var(--main-color);
+    color: var(--main-bg-color);
+    border-bottom: .2rem solid var(--main-bg-color); 
+  }
+
+ 
